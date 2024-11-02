@@ -61,7 +61,7 @@
                 communication and an open mindset. My dedication to excellence, adaptability, and collaborative spirit make me a valuable addition to any team. 
                 Let's collaborate and create something extraordinary together!
             </p>
-           <a href="https://drive.google.com/file/d/18AGnWqiXhc2b9CxzF3gK0Qp_mfs1LjtY/view?usp=drive_link" class="btn">Download Resume</a>
+           <a href="https://drive.google.com/file/d/1gg28Hxq62GER7g0Bxr1Db-1bCLbTln_G/view?usp=sharing" class="btn">Download Resume</a>
         </div>
     </div>
 </section>
@@ -148,7 +148,7 @@
 
 </section>
 
-<section class="project" id="project">
+<!-- <section class="project" id="project">
     <h1 class="heading"><span>My</span>Projects</h1>
     <div class="box-container">
         <div class="box">
@@ -159,7 +159,7 @@
         <div class="box">
             <h3>Redesign Website Using Figma</h3>
             <img src="images\figma.png">
-            <a href="#"data-position="top" data-tooltip="Source code"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.figma.com/proto/sEbOrYsQ0xIupYNvtQdRDe/Flipkart-Redesign-Home-page?node-id=2-2&node-type=canvas&t=nwYajt5IZ1Hlm3qG-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"data-position="top" data-tooltip="View Design"><i class="fab fa-figma"></i></a>
         </div>
         <div class="box">
             <h3>Music Player</h3>
@@ -172,7 +172,43 @@
             <a href="https://github.com/Mariselvam1318/Password-Generator-using-Java"data-position="top" data-tooltip="Source code"><i class="fa-brands fa-github"></i></a>
         </div>        
     </div>
+</section> -->
+
+<section class="project" id="project">
+    <h1 class="heading"><span>My</span> Projects</h1>
+
+    <!-- Left arrow for scrolling -->
+    <button class="arrow left" onclick="swipeLeft()">&#10094;</button>
+    
+    <div class="box-container" id="boxContainer">
+        <!-- Initial Projects -->
+        <div class="box">
+            <h3>Product Landing Page</h3>
+            <img src="images/plpage.png" alt="Product Landing Page">
+            <a href="https://github.com/Mariselvam1318/Product-Landing-Page" data-position="top" data-tooltip="Source code"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="box">
+            <h3>Redesign Website Using Figma</h3>
+            <img src="images/figma.png" alt="Figma Redesign">
+            <a href="https://www.figma.com/proto/sEbOrYsQ0xIupYNvtQdRDe/Flipkart-Redesign-Home-page" data-position="top" data-tooltip="View Design"><i class="fab fa-figma"></i></a>
+        </div>
+        <div class="box">
+            <h3>Music Player</h3>
+            <img src="images/music.png" alt="Music Player">
+            <a href="https://github.com/Mariselvam1318/Music-Player" data-position="top" data-tooltip="Source code"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="box">
+            <h3>Quiz</h3>
+            <img src="images/Quiz.png" alt="Quiz">
+            <a href="https://github.com/Mariselvam1318/Quiz" data-position="top" data-tooltip="Source code"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+
+    <!-- Right arrow for scrolling -->
+    <button class="arrow right" onclick="swipeRight()">&#10095;</button>
 </section>
+
+
 <section class="contact" id="contact">
     <h1 class="heading"><span>Contact</span>me</h1>
     <div class="box-container">
@@ -194,7 +230,7 @@
             </p>
         </div>        
     </div>
-    <div class="row">
+    <!-- <div class="row">
         <form action="#">
             <input type="text" placeholder="Name" class="box">
             <input type="email" placeholder="Email" class="box">
@@ -203,8 +239,18 @@
             <input type="submit" class="btn" value="Send message">
 
         </form>
+    </div> -->
+    <div class="row">
+        <form id="contact-form">
+            <input type="text" placeholder="Name" name="from_name" class="box">
+            <input type="email" placeholder="Email" name="from_email" class="box">
+            <input type="number" placeholder="Number" name="contact_number" class="box">
+            <textarea placeholder="Message" name="message" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="Send message">
+        </form>
     </div>
 </section>
+
 
 <footer>
     Created by  <span>Mr.Mariselvam</span> | all rights reserverd
@@ -222,6 +268,12 @@
 
 
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("wyH_OGi1WOpjqCm2F"); // Replace with your User ID
+   })();
+</script>
 
 
 <script src="js/script.js"></script>    
